@@ -9,7 +9,10 @@
      scroll-behavior: smooth;
 }
 header {
-    background-color: #f0f0f0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -20,20 +23,27 @@ header {
 }
 .logo {
     text-decoration: none;
-    color: #3a6cf4;
+    color: #f6650a9b;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
 }
 .navigation a {
-    color: #3a6cf4;
+    color: #f6650a9b;
     text-decoration: none;
     padding-left: 30px;
     font-size: 1.1em;
     font-weight: 500;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
 }
-.navigation a:hover {
-    color: #601cfc;
+.navigation a:hover,
+.navigation a:focus,
+.navigation a:active {
+    color: #ffffff;
+    background: #f6650a3a;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 section {
     padding: 100px 200px;
@@ -43,10 +53,31 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: url(background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    text-align: center;
+}
+
+.main .mainCon {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    padding: 70px 70px 50px 70px;
+    border-radius: 18px;
+}
+.main .mainCon img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: #f6650a36 solid 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
 }
 .main h2 {
     color: #ffff;
@@ -57,9 +88,12 @@ section {
 .main h2 span {
     display: inline-block;
     margin-top: 10px;
-    color: #4e9eff;
+    color: #cb52089b;
     font-size: 3em;
     font-weight: 600;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: #000 ;
 }
 .main h3 {
     color:white;
@@ -71,7 +105,7 @@ section {
 }
 .main-btn{
     color: white;
-    background-color: #3a6cf4;
+    background-color: #f6650a9b;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -83,21 +117,29 @@ section {
     transition: 0.7s ease;
 }
 .main-btn:hover {
-    background-color: #0a49f6;
+    background-color: #ff8d469b;
     transform: scale(1.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
+
 .social-icons a {
     color: white;
     font-size: 1.7em;
-    padding-right: 30px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff8d469b;
 }
 .tittle {
     display: flex;
     justify-content: center;
-    color: #3a6cf4 ;
+    color: #ff8d469b;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px;
+    text-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
 }
 .content {
     display: flex;
@@ -105,8 +147,14 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
 }
+.cards {
+    background: linear-gradient(#271001,#c5c2c2);
+}
 .card {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     width: 21.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 /15%);
     border-radius: 10px;
@@ -120,28 +168,31 @@ section {
     cursor: pointer;
 }
 .icon {
-    color: #3a6cf4;
+    color: #ff8d469b;
     font-size: 8em;
     text-align: center;
 }
 .info h3 {
-    color: #3a6cf4;
+    color: #ff8d469b;
     font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
 }
 .info {
     text-align: center;
+    color: #f0f0f0;
 }
 .projects{
-    background-color: #000016;
+    background-color: #c5c2c2;
 }
 .projects .content {
     margin-top: 30px;
 }
 .project-card {
-    background-color: white;
-    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     min-height: 14em;
     width: 23em;
     overflow: hidden;
@@ -175,16 +226,20 @@ section {
 
 .more-details {
     text-decoration: none;
-    color: #3a6cf4;
+    color: #ff8d469b;
+    transition: all 0.3s ease;
 }
 .more-details:hover {
-    color: #601cfc;
+    color: #694f3f9b;
+}
+.cards-contact {
+    background-color: #271001;
 }
 .contact .icon {
     font-size: 4.5em;
 }
 .contact .info h3 {
-    color: #000;
+    color: #ffffff;
 }
 .contact {
     align-items: center;
@@ -204,9 +259,10 @@ section {
 .footer-title {
     font-size: 1.3em;
     font-weight: 600;
+    cursor: pointer;
 }
 .footer-title span {
-    color: #3a6cf4;
+    color: #f6650a9b;
 }
 .footer .social-icons a {
     font-size: 1.3em;
