@@ -244,7 +244,6 @@ section {
 .contact {
     align-items: center;
     text-align: center;
-     text-decoration :none;
 }
 .contact .info p {
     font-size: 1.1em;
@@ -324,3 +323,4 @@ section {
     }
 
 }
+
