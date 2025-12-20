@@ -147,25 +147,22 @@
         <!-- modify this form HTML and place wherever you want your form -->
         <form id="myform"
             action="https://formspree.io/f/xrezpdvg"
-            method="POST"
-            target="hidden-iframe"
-            onsubmit="this.reset();">
+            method="POST">
             <label class="elabel">Your email</label>
-            <input id="input-box" type="email" name="email">
+            <input id="input-box" type="email" name="email" placeholder="enter your email" required>
             
             <label class="elabel">your massage</label>
-            <textarea name="message" class="massage"></textarea>
+            <textarea name="message" class="massage" placeholder="enter your massage" required></textarea>
             <p id="error" class="error">Please enter your email</p>
             <p id="list-container" class="list">massage sent !</p>
             <!-- your other form fields go here -->
             <button type="submit" class="emailBtn" onclick="AddTask()">Send</button>
         </form>
-        <iframe name="hidden_iframe" style="display:none;"></iframe>
     </section>
 
 
     <footer class="footer">
-        <p class="footer-title">Copyrights @ <span>Ahmed Elkhayat</span></p>
+        <p class="footer-title">Copyrights @<span>Ahmed Elkhayat</span></p>
         <div class="social-icons">
                 <a href="https://www.linkedin.com/in/ahmed-el-khayat-144832322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-square-linkedin"></i></a>
                 <a href="https://www.facebook.com/share/1DMLPmrNZd/?mibextid=wwXIfr"><i class="fa-brands fa-square-facebook"></i></a>
@@ -174,6 +171,6 @@
             </div>
     </footer>
 
-<script src="main.js"></script>
+<!--<script src="main.js"></script>-->
 </body>
 </html>
