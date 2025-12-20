@@ -8,6 +8,11 @@
      box-sizing: border-box;
      scroll-behavior: smooth;
 }
+html {
+    touch-action: pan-x pan-y;
+    overflow-x: hidden;
+}
+
 body {
     background-color: #271001;
 }
