@@ -141,6 +141,26 @@
             </div>
         </div>
     </section>
+    <section class="email">
+        <h2 class="title">SEND US A MASSAGE</h2>
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form id="myform"
+            action="https://formspree.io/f/xrezpdvg"
+            method="POST"
+            target="hidden-iframe"
+            onsubmit="this.reset();">
+            <label class="elabel">Your email</label>
+            <input id="input-box" type="email" name="email">
+            
+            <label class="elabel">your massage</label>
+            <textarea name="message" class="massage"></textarea>
+            <p id="error" class="error">Please enter your email</p>
+            <p id="list-container" class="list">massage sent !</p>
+            <!-- your other form fields go here -->
+            <button type="submit" class="emailBtn" onclick="AddTask()">Send</button>
+        </form>
+        <iframe name="hidden_iframe" style="display:none;"></iframe>
+    </section>
 
 
     <footer class="footer">
@@ -153,6 +173,6 @@
             </div>
     </footer>
 
-
+<script src="main.js"></script>
 </body>
 </html>
